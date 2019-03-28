@@ -9,4 +9,5 @@ public class SumArgs {
         }
         System.out.println("Sum: "+ sum);   //debug in home
     }
+
 }
