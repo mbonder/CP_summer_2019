@@ -14,6 +14,14 @@ public class Playwithshapes {
         System.out.println(c1);
         System.out.println(c1.calcSurface());
 
+        Triangle t1 = new Triangle(8, 10);
+        System.out.println(t1);
+        System.out.println(t1.calcSurface());
+
+        EqTriangle eq1 = new EqTriangle(4);
+        System.out.println(eq1);
+        System.out.println(eq1.calcSurface());
+
         Shape s1 = r1;
 
         r1.calcSurface();
@@ -28,7 +36,8 @@ public class Playwithshapes {
         Shape[] myShapes = new Shape[3];
         myShapes[0] = r1;
         myShapes[1] = c1;
-        myShapes[2] = new Rectangle(2,9);
+        myShapes[2] = t1;
+        myShapes[3] = eq1;
 
         for (Shape s : myShapes) {
             System.out.println(s);

@@ -20,7 +20,7 @@ public abstract class Shape {
 
     public abstract double calcSurface();
 
-    @Override //?
+    @Override
     public String toString() {
         return "Shape[parA=" + parA + ", parB=" +parB + "]";
     }
