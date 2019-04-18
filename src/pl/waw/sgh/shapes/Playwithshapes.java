@@ -1,5 +1,7 @@
 package pl.waw.sgh.shapes;
 
+import java.util.Arrays;
+
 public class Playwithshapes {
 
     public static void main(String[] args) {
@@ -39,10 +41,20 @@ public class Playwithshapes {
         myShapes[2] = t1;
         myShapes[3] = eq1;
 
+        Arrays.sort(myShapes);
+
         for (Shape s : myShapes) {
             System.out.println(s);
             System.out.println(s.calcSurface());
+            //if shpe inherits from or implements interface
+            if (s instanceof PerimeterCalculation) {
+                //Cast - look a s as PerimeterCalculation object
+                PerimeterCalculation pc = ((PerimeterCalculation)s);
+                System.out.println("Perimeter: " + pc.calcPerimeter());
+            }
+
         }
+
 
 
     }
